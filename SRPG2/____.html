@@ -1,0 +1,132 @@
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+
+<title>SrpG</title>
+
+</head>
+
+<body>
+
+<hr />
+
+<br />
+<br />
+<br />
+
+<center>
+
+<table border=1>
+<tr><td>
+<!--<applet code="SRPG.class" codebase="./srpgClasses" width="650" height="500">-->
+<applet archive="srpg.jar" code=RunnableApplet width=640 height=480>
+</applet>
+</td></tr>
+</table>
+
+</center>
+<br />
+Appletが入力を得られないときは、Appletの上で一度クリックしてください。<br />
+
+<br />
+<br />
+<div align="right">last modified 4/7</div>
+<hr />
+
+<h2>操作方法</h2>
+
+<p>
+
+カーソル移動：矢印キー、テンキー矢印キー(NumLockオフ)<br />
+
+決定：Enterキー、スペースキー<br />
+
+キャンセル：Escキー、BackSpaceキー、Deleteキー<br />
+
+</p>
+
+<h2>ゲーム説明</h2>
+
+<p>
+
+アクティブターン制の戦術シミュレーションゲームです。<br />
+ユニットごとにターンが移ります。右のリストが予想される順序です。
+
+<h3>コマンドメニュー(Move, Attack, System, Standby)</h3>
+<p>
+最初に表示されているメニューです。<br />
+Move, Attackを選択するとそれぞれの可能範囲が表示されます。<br />
+そこから、Moveなら空いているマスを、Attackなら敵ユニットのいるマスを選択してください。<br />
+移動後にキャンセルキーを押すことで移動をキャンセルすることができます。<br />
+Standbyを選択するかAttack、Skill、Itemを行うとそのユニットのターンが終了し、次のユニットへ移ります。
+</p>
+
+<h3>勝利・敗北条件</h3>
+<p>
+敵ユニットを全滅させればプレイヤーの勝利です。<br />
+
+プレイヤーユニットが全滅した場合はプレイヤーの敗北です。
+</p>
+
+<h3>その他</h3>
+<p>
+カーソルをユニットに重ねるとユニットの情報が表示されます。<br />
+右上のTimeは経過時間です。できるだけ早く攻略するような遊び方も想定しています。<br />
+ゲームをスタートして1回目の行動の早さは変動します。
+</p>
+
+<ul>
+<li>攻撃のタイプには「平射」と「擲射」があり、「平射」の攻撃可能範囲は地形等の障害物の向こうに届きません。</li>
+<li></li>
+</ul>
+
+</p>
+
+<h2>ユニット説明</h2>
+
+<p>
+平射武器タイプの攻撃は障害物の向こうには届きません。<br />
+擲射武器タイプの攻撃は障害物に影響されません。
+</p>
+<table border="1">
+<tr>
+<td>ユニット名</td><td>HP</td><td>攻撃力</td><td>武器タイプ</td>
+</tr>
+<tr>
+<td><font color="#6600ff">霊夢</font></td><td>◎</td><td>◎</td><td>平射</td>
+</tr>
+<tr>
+<td><font color="#0066ff">妖精青</font></td><td>○</td><td>○</td><td>擲射</td>
+</tr>
+<tr>
+<td><font color="#ff4400">T-90</font></td><td>○</td><td>○</td><td>平射</td>
+</tr>
+<tr>
+<td><font color="#ff0066">2С19 Мста-С </font></td><td>△</td><td>△</td><td>擲射</td>
+</tr>
+</table>
+
+<h2>戦術</h2>
+
+<p>
+地形には林(移動コスト2、被ダメージ1割減)と、山(移動コスト3、被ダメージ2割減)があり、<br />
+進軍を妨げますが防御に活用することもできます。<br />
+
+</p>
+<a href="http://www.w-frontier.com/"  title="高機能HTML/XHTML/スタイルシート対応エディタ(Web Frontier)">Created by ez-HTML</a>
+<hr />
+
+<!--google analytics-->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1461476-2";
+urchinTracker();
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,127 @@
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+
+<title>SrpG</title>
+
+</head>
+
+<body>
+
+<hr />
+
+<br />
+<br />
+<br />
+
+<center>
+！！注意！！ 音が出ます<br>
+<table border=1>
+<tr><td>
+<!--<applet code="game/RunnableApplet.class" codebase="./srpg" width="640" height="460">-->
+<applet archive="srpg.jar" code=game.RunnableApplet width=640 height=460>
+</applet>
+</td></tr>
+</table>
+
+</center>
+<br />
+Appletが入力を得られないときは、Appletの上で一度クリックしてください。<br />
+
+<br />
+<br />
+<div align="right">last modified 2010/7/14</div>
+<hr />
+
+<h2>操作方法</h2>
+
+<p>
+
+カーソル移動：矢印キー、テンキー矢印キー(NumLockオフ)<br />
+
+決定：Enterキー、スペースキー<br />
+
+キャンセル：Escキー、BackSpaceキー、Deleteキー<br />
+
+</p>
+
+<h2>ゲーム説明</h2>
+
+<p>
+Stage_Selectからステージを選んで遊べます。<br />
+アクティブターン制の戦術シミュレーションゲームです。<br />
+ユニットごとにターンが移ります。右のリストが予想される順序です。<br>
+System -> Quite Gameを選択し、ゲームを終了すれば別のステージを遊ぶことも出来ます。<br>
+<br>
+Stage1 : プレイヤに優しいステージです。<br>
+Stage2 : プレイヤに優しいステージです。少し広いです。<br>
+Stage3 : よりSRPGっぽいステージです。<br>
+</p>
+
+<h3>コマンドメニュー(Move, Attack, Skill, Item, System, Standby)</h3>
+<p>
+最初に表示されているメニューです。<br />
+Move, Attack, Skill等を選択すると、それぞれの可能範囲が表示されます。<br />
+<font color="#ddaa22">黄色</font>は攻撃範囲です。<br />
+そこから、Moveなら空いているマスを、Attackなら敵ユニットのいるマスを選択してください。<br />
+移動後にキャンセルキーを押すことで、移動をキャンセルすることができます。<br />
+Standbyを選択するかAttack、Skill、Itemを行うと、そのユニットのターンが終了し、次のユニットへ移ります。<br>
+</p>
+<p>
+このメニューでキャンセルすると、マップ上のカーソルを動かせます。<br />
+もう一度キャンセルすると、このメニューに戻ります。<br />
+マップ上のカーソルでユニットを選択すると、そのターンでの攻撃可能範囲を表示します。(ただし、貫通タイプの攻撃は除く)
+</p>
+
+<h3>勝利・敗北条件</h3>
+<p>
+敵ユニットを全滅させればプレイヤーの勝利です。<br />
+
+プレイヤーユニットが全滅した場合はプレイヤーの敗北です。
+</p>
+
+<h3>その他</h3>
+<ul>
+<li><b>テンション</b><br />ユニットの頭上の<font color="#22cc44">緑のゲージ</font>はテンションの高まりを表します。<br />
+このゲージが満タンのとき、強力なスキルを使えます。<br />
+このゲージは、主にHPやSPが減少したときに減り、敵へダメージを与えたときに増加します。</li>
+<li><b>バックアタック</b><br />敵ユニットの後方に隣接した3ヘクスから攻撃すると、ダメージが2倍になります。</li>
+<li><b>ZOC</b><br />Zone Of Controlというやつで、敵ユニットの隣接ヘクスは通り抜けられません。</li>
+<li><b>平射、擲射、貫通</b><br />攻撃のタイプには「平射」と「擲射」と「貫通」があり、<br />
+「平射」の攻撃は地形やユニット等の障害物の向こうに届きません。<br />
+「擲射」は障害物に影響されません。<br />
+「貫通」はユニットが障害になりませんが、味方も攻撃に巻き込みます。</li>
+<li><b>射程</b><br />射程は高さ方向にも設定してあります。高低差の大きい目標は射程外になります。</li>
+<li><b>ディレイ</b><br />攻撃やスキルを使用した場合やダメージを受けた場合、そのユニットの次の行動順は遅くなります。<br>
+基本的には、より強いスキルを使用したり、より強いダメージを受けると、より遅くなります。</li>
+<li><b>移動コスト</b><br />地形ごとに移動コストがあり、また高い場所へ移動するのにもコストを伴います。</li>
+<li><b>描画モード</b><br />コマンドメニューのSystem -> ChangePaintModeを選択すると、描画モードを変更できます。<br />
+環境によっては動作が快適になるかもしれません。<br />
+もう一度選択すれば、元に戻ります。<br />
+余りにも処理落ちするようであれば、自動で元に戻ります。
+</li>
+</ul>
+
+<p>
+カーソルをユニットに重ねるとユニットの情報が表示されます。<br />
+右上のTimeは経過時間です。できるだけ早く攻略するような遊び方も想定しています。<br />
+ゲームをスタートして1回目の行動の早さは変動します。
+</p>
+
+<a href="http://www.w-frontier.com/"  title="高機能HTML/XHTML/スタイルシート対応エディタ(Web Frontier)">Created by ez-HTML</a>
+<hr />
+
+<!--google analytics-->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1461476-2";
+urchinTracker();
+</script>
+
+</body>
+
+</html>
+

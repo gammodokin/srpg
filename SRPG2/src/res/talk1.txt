@@ -1,0 +1,58 @@
+\in 魔理沙 left
+\talk 魔理沙
+このゲームは開発途中です。
+
+\next
+\in 霊夢 right
+\talk 霊夢
+バグがあると思いますが、直していくつもりです。
+
+\next
+\out 魔理沙
+\pos 霊夢 center
+色々と自己満足なシステムを実装してるので、
+下の説明を読んでいただけると嬉しいです。
+
+\endtalk
+
+\next
+\talk 魔理沙
+以下会話窓テスト
+
+\next
+\flip 魔理沙
+\pos 魔理沙 right
+\flip 霊夢
+\pos 霊夢 left
+てすてす
+アーアー聞こえなーい
+右から話してみたり
+
+ほげほげ
+
+\next
+ふがふが
+ぴよぴよ
+質問
+\question はい いいえ
+\next
+\flip 魔理沙
+質問
+\next
+\ans 0
+はいって言った
+\endans
+\ans 1
+いいえって言った
+\endans
+
+\next
+\flip 霊夢
+\talk 霊夢
+以上
+\out 魔理沙
+\endtalk
+
+ここまでこない
+
+はず
